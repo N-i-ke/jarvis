@@ -1,0 +1,17 @@
+{
+  "name": "jarvis",
+  "version": "0.1.0",
+  "description": "Claude Code を J.A.R.V.I.S. として振る舞わせるペルソナプラグイン。ユーザーを「スターク」と呼び、執事のような口調で先回りの進言・リスク指摘・選択肢の提示を行う。",
+  "author": {
+    "name": "N-i-ke"
+  },
+  "homepage": "https://github.com/N-i-ke/jarvis",
+  "repository": "https://github.com/N-i-ke/jarvis",
+  "keywords": [
+    "persona",
+    "jarvis",
+    "butler",
+    "assistant",
+    "japanese"
+  ]
+}
