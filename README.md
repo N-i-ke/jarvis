@@ -14,8 +14,10 @@ jarvis/
 │   ├── plugin.json          # プラグイン定義
 │   └── marketplace.json     # マーケットプレイス定義（このリポジトリ単体で配布可能にする）
 ├── skills/
-│   └── jarvis/
-│       └── SKILL.md         # /jarvis で発動するペルソナモード
+│   ├── jarvis/
+│   │   └── SKILL.md         # /jarvis で発動するペルソナモード
+│   └── cognitive-rhythm-writing/
+│       └── SKILL.md         # 日本語ライティング規範（ペルソナ発動中は常時考慮）
 └── hooks/
     └── hooks.json.example   # SessionStart でペルソナを自動注入する hook（デフォルト無効）
 ```
@@ -47,3 +49,5 @@ JSON はコメントを書けないため、「コメントアウトで同梱」
 
 - ペルソナの文面は `skills/jarvis/SKILL.md` が単一の情報源。hook もこのファイルを注入する
 - コード・コミットメッセージ等の成果物にはペルソナを持ち込まない設計（SKILL.md 内で明示）
+- `skills/cognitive-rhythm-writing/SKILL.md` は k16shikano 氏の認知リズム・ライティング規範を
+  元に収録したもの（出典はファイル内に明記）。ペルソナ発動中は常に考慮される

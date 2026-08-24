@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "J.A.R.V.I.S. ペルソナプラグインのマーケットプレイス",
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
   "plugins": [
     {
       "name": "jarvis",
       "source": "./",
       "description": "Claude Code を MCU の J.A.R.V.I.S. として振る舞わせるペルソナモード。/jarvis で発動し、ユーザーを「スターク」と呼ぶ執事口調で先回りの進言・リスク指摘・選択肢の提示を行う。",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "category": "persona",
       "keywords": [
         "persona",
