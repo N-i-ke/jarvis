@@ -12,17 +12,17 @@ This skill is vendored from [cloudflare/security-audit-skill](https://github.com
 
 ### Invocation arguments
 
-When invoked as `/jarvis:security [args]`, map the arguments to the upstream operating modes:
+When invoked as `/jarvis:security [args]`, map the arguments to the upstream operating modes. Treat the first token as a mode keyword only when it is exactly `audit`, `quick`, or `client` AND the remainder is empty or resolves to an existing filesystem path; otherwise treat the entire argument string as a question or concern (guidance mode). If intent is still ambiguous, ask one focused question per the upstream mode rules before creating files.
 
 - **(no args)** — ask one focused question to determine target and intent, then apply the upstream mode rules.
 - **`<question or specific concern>`** — guidance mode.
 - **`audit [path]`** — full audit mode, `standard` profile. Scope the run to `path` if given.
 - **`quick [path]`** — full audit mode, `quick` profile. Scope the run to `path` if given.
-- **`client [path]`** — scoped `quick` full-audit run limited to client-side/browser surfaces: select [CLIENT-SIDE.md](CLIENT-SIDE.md), [WEB-PROTOCOL-AND-AUTH.md](WEB-PROTOCOL-AND-AUTH.md), and [ATTACK-CLASSES.md](ATTACK-CLASSES.md) as companions and seed ledger units only for in-scope client-side surfaces.
+- **`client [path]`** — full audit mode, `quick` profile, scoped to client-side/browser surfaces and executed under the upstream scoped-run rules (including `out_of_scope` recording). Reconnaissance is expected to select [CLIENT-SIDE.md](CLIENT-SIDE.md) — and, where auth or session boundaries appear, [WEB-PROTOCOL-AND-AUTH.md](WEB-PROTOCOL-AND-AUTH.md) — as domain companions, but companion selection still follows the evidence-driven rules in [RECONNAISSANCE.md](RECONNAISSANCE.md); this shortcut sets scope, never the companion list.
 
 ### Cost gate
 
-Before starting any full audit, present the chosen profile, the estimated number of agent invocations, and a proposed `budget` to the user and get explicit approval. Record the approved budget in `run-metadata.json` per the upstream budget rules.
+Before starting any full audit, present the chosen profile, the estimated number of agent invocations, and a proposed `budget` to the user and get explicit approval. Record the approved budget in `run-metadata.json` per the upstream budget rules; if the user approves running without a cap, record `budget: null`.
 
 ### Language and persona
 

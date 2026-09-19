@@ -61,7 +61,7 @@ JSON はコメントを書けないため、「コメントアウトで同梱」
 /jarvis:security <質問や懸念>          # ガイダンスモード（成果物なし）
 /jarvis:security audit [path]        # フル監査（standard プロファイル）
 /jarvis:security quick [path]        # フル監査（quick プロファイル・軽量）
-/jarvis:security client [path]       # クライアントサイド特化のスコープ付き監査
+/jarvis:security client [path]       # クライアントサイド特化のスコープ付き監査（quick プロファイル）
 ```
 
 ### 要件と注意
