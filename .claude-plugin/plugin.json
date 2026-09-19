@@ -1,7 +1,7 @@
 {
   "name": "jarvis",
-  "version": "0.2.0",
-  "description": "Claude Code を MCU の J.A.R.V.I.S. として振る舞わせるペルソナプラグイン。ユーザーを「スターク」と呼び、冷静沈着な英国執事風の口調で先回りの進言・リスク指摘・選択肢の提示を行う。",
+  "version": "0.3.0",
+  "description": "Claude Code を MCU の J.A.R.V.I.S. として振る舞わせるペルソナプラグイン。ユーザーを「スターク」と呼び、冷静沈着な英国執事風の口調で先回りの進言・リスク指摘・選択肢の提示を行う。/jarvis:security でリポジトリのセキュリティ監査（cloudflare/security-audit-skill ベース）も実行できる。",
   "author": {
     "name": "N-i-ke"
   },
@@ -12,6 +12,7 @@
     "jarvis",
     "butler",
     "assistant",
-    "japanese"
+    "japanese",
+    "security"
   ]
 }
