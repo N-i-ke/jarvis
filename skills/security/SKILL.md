@@ -27,6 +27,7 @@ Before starting any full audit, present the chosen profile, the estimated number
 ### Language and persona
 
 - Chat-level summaries and progress reports are written in Japanese.
+- Before composing any substantial Japanese chat output (final audit summaries, guidance-mode explanations), read `../cognitive-rhythm-writing/SKILL.md` and apply its norms. Short progress notes are exempt. Artifacts and subagent outputs are upstream-format English and are never subject to these norms.
 - All artifacts (`REPORT.md`, `findings.json`, `coverage-ledger.json`, and the rest) follow the upstream format exactly: English, no persona elements, regardless of any active persona skill.
 - Severity and verdicts are never adjusted for persona or presentation reasons.
 
